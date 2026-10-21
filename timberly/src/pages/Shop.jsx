@@ -75,7 +75,7 @@ function Shop() {
         {products.map((product) => <ProductCard key={product.id} product={product} addToCart={() => addToCart(product)} />)}
       </div>}
       {!loading && !error && (page > 1 || hasNext) && <nav className="pagination" aria-label="Product pages">
-        <button type="button" disabled={page <= 1} onClick={() => changeFilter("page", String(page - 1))}>← Previous</button>
+        <button type="button" disabled={page <= 1} onClick={() => { const next = new URLSearchParams(params); if (page - 1 <= 1) next.delete("page"); else next.set("page", String(page - 1)); setParams(next); }}>← Previous</button>
         <span>Page {page}</span>
         <button type="button" disabled={!hasNext} onClick={() => { const next = new URLSearchParams(params); next.set("page", String(page + 1)); setParams(next); }}>Next →</button>
       </nav>}
