@@ -89,7 +89,7 @@ function Cart() {
           </p>
 
           <Link to="/checkout" className="checkout-button">
-            Proceed to Checkout
+            Proceed to demo checkout
           </Link>
 
           <button
