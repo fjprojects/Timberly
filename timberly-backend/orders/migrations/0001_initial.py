@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name="Order",
             fields=[
-                ("id", models.BigAutoField(primary_key=True, serialize=False)),
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
                 ("full_name", models.CharField(max_length=150)),
                 ("email", models.EmailField(max_length=254)),
                 ("phone", models.CharField(max_length=30)),
@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name="OrderItem",
             fields=[
-                ("id", models.BigAutoField(primary_key=True, serialize=False)),
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
                 ("product_name", models.CharField(max_length=200)),
                 ("product_sku", models.CharField(max_length=50)),
                 ("unit_price", models.DecimalField(max_digits=10, decimal_places=2)),
