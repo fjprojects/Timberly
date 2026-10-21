@@ -1,0 +1,115 @@
+.about {
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f5f1ea;
+  border-radius: 10px;
+}
+
+.about-hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #4b2e1f;
+}
+
+.about-hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+
+/* Main Content */
+.about-content {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  color: #4b2e1f;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+
+/* Values Section */
+.about-values {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about-values h2 {
+  font-size: 32px;
+  color: #4b2e1f;
+}
+
+.values {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 280px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #6b3f22;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .about {
+    padding: 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .values {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
