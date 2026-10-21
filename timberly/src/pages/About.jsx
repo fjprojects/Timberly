@@ -1,10 +1,8 @@
 import "../components/About/About.css";
-import Navbar from "../components/Navbar/Navbar";
 
 function About() {
   return (
     <>
-      <Navbar />
 
       <div className="about">
         <section className="about-hero">
